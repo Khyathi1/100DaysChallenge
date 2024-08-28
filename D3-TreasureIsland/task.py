@@ -32,5 +32,26 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 Welcome to Treasure Island. It is your turn to make some decisions until you find a treasure.
       """)
-# d1 = input("    Left or right?  : ")
-# if(d1.lower)
+d1 = input("    Left or right?  : ")
+if(d1.lower()=='left'):
+      d2 = input("  Swim or Wait?  : ")
+      if(d2.lower() == 'wait'):
+            d3 = input("    Which Door? [Red, Blue, Green]  : ")
+            if(d3.lower()=='Red'):
+                  d31 = input("Fell into a giant oven .... oh no!\nDo you wanna risk jumping in [Yes or No]?")
+                  if(d31.lower()=="yes"):
+                        print("Oh wait it is not an oven... it's hell.... Game over")
+                  else:
+                        print("No risk\nNo treasure\nGame Over")
+            elif(d3.lower()=='blue'):
+                  d32=input("Oh it is a cave full of bats\nDo you wanna risk going in [Yes or No]?")
+                  if(d32.lower()=='yes'):
+                        print('Ahoy! therz the treasure kaboom')
+                  else:
+                        print("Eaten by a Lion\n Game over")
+            else:
+                  print("Fell into a venus fly trap....\nGameOver")      
+      else:
+           print('Hey you donno how to swim\nGameOver')
+else:
+      print('Not always right\nGameOver')
